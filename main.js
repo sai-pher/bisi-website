@@ -1,5 +1,5 @@
 // Smooth scroll for the menu
-$('.nav-menu a, #mobile-nav a').on('click', function() {
+$('.navbar-nav a').on('click', function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
         if (target.length) {
@@ -17,8 +17,8 @@ $('.nav-menu a, #mobile-nav a').on('click', function() {
                 scrollTop: target.offset().top - top_space
             }, 1500, 'easeInOutExpo');
 
-            if ($(this).parents('.nav-menu').length) {
-                $('.nav-menu .menu-active').removeClass('menu-active');
+            if ($(this).parents('.navbar-nav').length) {
+                $('.navbar-nav .menu-active').removeClass('menu-active');
                 $(this).closest('li').addClass('menu-active');
             }
 
