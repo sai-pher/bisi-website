@@ -4218,14 +4218,16 @@ button.close {
   width: 15%;
   color: #fff;
   text-align: center;
-  opacity: 0.5; }
+  opacity: 0.06;
+}
   .carousel-control-prev:hover, .carousel-control-prev:focus,
   .carousel-control-next:hover,
   .carousel-control-next:focus {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    opacity: .9; }
+    opacity: .4;
+  }
 
 .carousel-control-prev {
   left: 0; }
@@ -4245,7 +4247,8 @@ button.close {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
 
 .carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='#151515' viewBox='0 0 5 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
 
 .carousel-indicators {
   position: absolute;
@@ -4374,7 +4377,9 @@ button.bg-light:focus {
   background-color: #dadada !important; }
 
 .bg-dark {
-  background-color: #151515 !important; }
+  background-color: #151515 !important;
+  opacity: 0.9;
+}
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
@@ -6220,6 +6225,10 @@ button.bg-dark:focus {
 
 .text-white {
   color: #fff !important; }
+
+.text-teal {
+  color: #00ddfa !important;
+}
 
 .text-primary {
   color: #2582b0 !important; }
