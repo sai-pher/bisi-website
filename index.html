@@ -15,16 +15,16 @@
 <body>
 <nav id="header" class="navbar fixed-top navbar-expand-md navbar-dark bg-dark">
     <div class="container justify-content-center">
-      <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
-              data-target="#navbar9">
+        <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse"
+                data-target="#navbar9">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar9">
         <ul class="navbar-nav">
           <li class="nav-item mx-2"><a class="nav-link text-light" href="#gallery">Gallery</a></li>
-          <li class="nav-item mx-2"><a class="nav-link text-light" href="#reviews">Articles</a></li>
-          <li class="nav-item mx-2"><a class="nav-link navbar-brand mr-0 text-teal" href="#about">
-            <b>BIO</b></a></li>
+            <li class="nav-item mx-2"><a class="nav-link text-light" href="#reviews" data-target="bio">Articles</a></li>
+            <li class="nav-item mx-2"><a class="nav-link navbar-brand mr-0 text-teal" href="#about" k>
+                <b>BIO</b></a></li>
           <li class="nav-item mx-2" style=""><a class="nav-link text-light" href="#book">Books</a></li>
           <li class="nav-item mx-2"><a class="nav-link text-light" href="#contact">Contacts </a></li>
         </ul>
@@ -36,9 +36,7 @@
     <div class="container">
       <div class="row">
         <div class="px-md-5 p-3 col-md-6 d-flex flex-column align-items-start justify-content-center">
-          <h1 class="text-dark">Bisi Adjapon</h1>
-          <p class="mb-3 lead text-dark">Has taken possession of my entire soul, like these sweet mornings of spring
-            which I enjoy with my whole heart.</p>
+            <h1 class="text-dark my-5">Author</h1>
           <div class="row">
             <div class="col-md-12 d-flex align-items-center justify-content-between my-2">
               <a href="https://www.instagram.com/bisiadjapon/">
@@ -53,21 +51,33 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6"><img class="img-fluid d-block mx-auto pt-3 rounded-circle"
-                                   src="pics/WhatsApp Image 2018-10-12 at 19.22.22.jpeg">
-        </div>
+          <div class="col-md-6
+      "><img class="img-fluid d-block mx-auto pt-3 rounded-circle"
+             src="pics/WhatsApp Image 2018-10-12 at 19.22.22.jpeg">
+              <div class="col-md-12 d-flex align-items-center justify-content-between p-5 m-2"><a
+                      class="btn btn-secondary mx-5 text-center px-4" href="#" data-toggle="modal"
+                      data-target="#bio-modal">Read about Author</a></div>
+          </div>
       </div>
     </div>
 </div>
-<!--<div class="py-5 text-center">-->
-<!--<div class="container">-->
-<!--<div class="row">-->
-<!--<div class="col-md-12">-->
-<!--<h1 contenteditable="true">Latest Books by Bisi<br></h1>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
+<div class="modal" id="bio-modal" style="">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">About Bisi Adjapon</h5>
+                <button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+            </div>
+            <div class="modal-body">
+                <p>Bio goes here</p>
+        </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+      </div>
+    </div>
+</div>
 <div id="book">
     <div class="container">
       <div class="row">
@@ -76,20 +86,79 @@
             <div class="carousel-inner">
               <!--test-->
               <div class="carousel-item active h-100">
-                <div class="py-5">
+                  <div class="pt-5">
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-5">
-                        <img class="d-block img-fluid h-50 my-5" src="pics/Of%20Women%20And%20Frogs%20Cover.jpeg">
-                      </div>
-                      <div class="col-md-7">
-                        <!--<div class="p-3 d-flex flex-column align-items-start justify-content-center col-md-7 order-1 order-md-2"> -->
+                        <div class="col-md-12 text-center">
                         <i class="d-block fa fa-stop-circle fa-3x mb-0 text-dark text-center"></i>
                         <h1 class="text-dark text-center">Of Women and Frogs</h1>
-                        <p class="mb-0 lead text-dark">When her curiosity about her body leads to a ginger-in-the-vagina
-                          punishment from her stepmother, Esi, a feisty half-Nigerian girl, begins to question the
-                          restrictions adults place on girls.</p>
-                        <!--</div>-->
+                        </div>
+                    </div>
+                      <div class="row">
+                          <div class="col-lg-3 col-md-6 py-md-4 px-4 order-1 order-lg-1 text-lg-right d-flex flex-column justify-content-between">
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa fa-circle mb-1 text-muted fa-2x"></i>
+                                      <p class="lead mb-1"><i>“A masterpiece“</i></p>
+                                      <p>Abdulkareem Baba Aminu, award-winning culture critic </p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa fa-stop-circle mb-1 text-muted fa-2x"></i>
+                                      <p class="lead mb-1"><i>“For an African, this brave story is steeped in
+                                          sexuality.”</i></p>
+                                      <p>Toni Kan, award-winning writer of Nights of a Creaking Bed</p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa fa-circle-o mb-1 text-muted fa-2x"></i>
+                                      <p class="lead mb-1"><i>“All 414 glorious pages consumed in one night....an
+                                          honest, in your face account of a little girl growing up.”</i></p>
+                                      <p>Pages and Palette</p>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-lg-5 col-md-6 mx-auto order-3 order-lg-2"><img class="img-fluid d-block"
+                                                                                         src="pics/Of Women And Frogs Cover.jpeg">
+                          </div>
+                          <div class="col-lg-3 col-md-6 py-md-4 px-4 order-2 order-lg-3 d-flex flex-column justify-content-between">
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa fa-stop-circle-o mb-1 text-muted fa-2x"></i>
+                                      <p class="lead mb-1"><b>Author</b></p>
+                                      <p>Toni Kan, award-winning writer of Nights of a Creaking Bed </p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa mb-1 text-muted fa-2x fa-circle-o"></i>
+                                      <p class="lead mb-1"><b>Publisher</b></p>
+                                      <p>I am so happy, my dear friend, so absorbed.</p>
+                                  </div>
+                              </div>
+                              <div class="row">
+                                  <div class="col-9 col-md-12"><i
+                                          class="d-block fa fa-circle mb-1 text-muted fa-2x"></i>
+                                      <p class="lead mb-1"><b>Price</b></p>
+                                      <p>the exquisite sense of mere tranquil existence.</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="py-4 text-center">
+                      <div class="container">
+                          <div class="row">
+                              <div class="mx-auto col-md-7">
+                                  <hr>
+                                  <h2 class="" contenteditable="true">Blurb</h2>
+                                  <p>When her curiosity about her body leads to a ginger-in-the-vagina punishment from
+                                      her stepmother, Esi, a feisty half-Nigerian girl, begins to question the
+                                      restrictions adults place on girls.</p>
+                                  <hr>
                       </div>
                     </div>
                   </div>
@@ -111,286 +180,311 @@
     </div>
   </div>
 <div style=" background-size: cover, cover;	background: url(pics/triangulation_turc_1080p.png) fixed;">
-  <!--Q-->
-  <div class="py-5" style="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h1 class=""><b>Reviews</b></h1>
+    <!--Q-->
+    <div class="py-5" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class=""><b>Reviews</b></h1>
           </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-1" style="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 col-sm-12">
-          <div class="carousel slide" data-ride="carousel" id="carousel2" data-interval="5000">
-            <div class="carousel-inner">
-              <!--test-->
-              <div class="carousel-item active h-100">
-                <div class="py-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">This is a really wonderful story. [Bisi Adjapon] writes with incredible
-                              vividness and clarity. [Her] similes and attention to all of the senses are really
-                              extraordinary.</p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-2.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Dave Eggers <br>
-                                  <i>publisher of&nbsp;McSweeney’s Quarterly Concern&nbsp;and Pulitzer Prize-winning
-                                    author of&nbsp;A Heartbreaking Work of Staggering Genius</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ml-auto col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">What a lovely &nbsp;lovely read. &nbsp;I want to buy copies to gift to every
-                              young woman I know. I laughed out loud in places. &nbsp;I swear it's a universal African
-                              girl story </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-3.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Zukiswa Wanner <br>
-                                  <i>winner of the&nbsp;K Sello Duiker Memorial Literary Award&nbsp;for&nbsp;London Cape
-                                    Town Joburg</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item h-100">
-                <div class="py-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">I was stealing time to read between patients. Don't remember the last time I
-                              did that. An enticing and mesmerizing read. It just pulls you along, and tugs at your
-                              heart, bringing back long forgotten strong and confusing feelings. A work of great courage
-                              and commitment. We’ll done! </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-2.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Doctor Afuah Laing <br>
-                                  <i>Gynecologist and founder of Obaatan Pa Free Clinic for Women.</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ml-auto col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">Getting&nbsp;the feel of a place right&nbsp;in fiction&nbsp;is a tough thing
-                              to do. &nbsp; Of Women and Frogs&nbsp;does&nbsp;not disappoint.&nbsp;Bisi&nbsp;Adjapon&nbsp;has&nbsp;addressed&nbsp;some&nbsp;of
-                              the truly&nbsp; difficult aspects of love and sexuality&nbsp;for girls and women in Ghana&nbsp;fearlessly
-                              and skillfully. 5 stars. </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-3.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2"><br>
-                                  <i>The Mirror, Gh.</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item h-100">
-                <div class="py-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">All 414 glorious pages consumed in one night....an honest, in your face
-                              account of a little girl growing up. </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-2.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Editor <br>
-                                  <i>Pages and Palette</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ml-auto col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">Go and get this book and read it, even if it’s the only book you read this
-                              year, and buy me a gift to thank me for this recommendation. </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-3.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Ummi Bakar <br>
-                                  <i>award-winning filmmaker of Uprooted</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item h-100">
-                <div class="py-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">Unputdownable.... a book that makes you go from laughing out loud to bawling
-                              and back to laughing again. </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-2.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Ayesha Haruna Attah <br>
-                                  <i>author of The Hundred Wells of Salaga</i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="ml-auto col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">For an African, this brave story is steeped in sexuality. </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-3.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Toni Kan <br>
-                                  <i>award-winning writer of Nights of a Creaking Bed </i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item h-100">
-                <div class="py-5">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-md-6 p-3">
-                        <div class="card">
-                          <div class="card-body p-4">
-                            <p class="mb-3">“A masterpiece “ </p>
-                            <div class="row">
-                              <div class="col-lg-2 col-3"><img class="img-fluid d-block rounded-circle"
-                                                               src="https://static.pingendo.com/img-placeholder-2.svg">
-                              </div>
-                              <div class="col-lg-10 col-9 d-flex align-items-center">
-                                <p class="my-2">Abdulkareem Baba Aminu <br>
-                                  <i>award-winning culture critic </i></p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!--end test-->
             </div>
-            <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-              <span class="carousel-control-next-icon"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+    <div class="py-1" style="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="carousel slide" data-ride="carousel" id="carousel2" data-interval="5000">
+                        <div class="carousel-inner">
+                            <!--test-->
+                            <div class="carousel-item active h-100">
+                                <div class="py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">This is a really wonderful story. [Bisi Adjapon]
+                                                            writes with incredible vividness and clarity. [Her] similes
+                                                            and attention to all of the senses are really
+                                                            extraordinary.</p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-2.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Dave Eggers <br>
+                                                                    <i>publisher of&nbsp;McSweeney’s Quarterly Concern&nbsp;and
+                                                                        Pulitzer Prize-winning author of&nbsp;A
+                                                                        Heartbreaking Work of Staggering Genius</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">What a lovely &nbsp;lovely read. &nbsp;I want to
+                                                            buy copies to gift to every young woman I know. I laughed
+                                                            out loud in places. &nbsp;I swear it's a universal African
+                                                            girl story </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-3.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Zukiswa Wanner <br>
+                                                                    <i>winner of the&nbsp;K Sello Duiker Memorial
+                                                                        Literary Award&nbsp;for&nbsp;London Cape Town
+                                                                        Joburg</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">I was stealing time to read between patients.
+                                                            Don't remember the last time I did that. An enticing and
+                                                            mesmerizing read. It just pulls you along, and tugs at your
+                                                            heart, bringing back long forgotten strong and confusing
+                                                            feelings. A work of great courage and commitment. We’ll
+                                                            done! </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-2.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Doctor Afuah Laing <br>
+                                                                    <i>Gynecologist and founder of Obaatan Pa Free
+                                                                        Clinic for Women.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">Getting&nbsp;the feel of a place right&nbsp;in
+                                                            fiction&nbsp;is a tough thing to do. &nbsp; Of Women and
+                                                            Frogs&nbsp;does&nbsp;not disappoint.&nbsp;Bisi&nbsp;Adjapon&nbsp;has&nbsp;addressed&nbsp;some&nbsp;of
+                                                            the truly&nbsp; difficult aspects of love and sexuality&nbsp;for
+                                                            girls and women in Ghana&nbsp;fearlessly and skillfully. 5
+                                                            stars. </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-3.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2"><br>
+                                                                    <i>The Mirror, Gh.</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">All 414 glorious pages consumed in one
+                                                            night....an honest, in your face account of a little girl
+                                                            growing up. </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-2.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Editor <br>
+                                                                    <i>Pages and Palette</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">Go and get this book and read it, even if it’s
+                                                            the only book you read this year, and buy me a gift to thank
+                                                            me for this recommendation. </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-3.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Ummi Bakar <br>
+                                                                    <i>award-winning filmmaker of Uprooted</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">Unputdownable.... a book that makes you go from
+                                                            laughing out loud to bawling and back to laughing
+                                                            again. </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-2.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Ayesha Haruna Attah <br>
+                                                                    <i>author of The Hundred Wells of Salaga</i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-auto col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">For an African, this brave story is steeped in
+                                                            sexuality. </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-3.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Toni Kan <br>
+                                                                    <i>award-winning writer of Nights of a Creaking
+                                                                        Bed </i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item h-100">
+                                <div class="py-5">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-6 p-3">
+                                                <div class="card">
+                                                    <div class="card-body p-4">
+                                                        <p class="mb-3">“A masterpiece “ </p>
+                                                        <div class="row">
+                                                            <div class="col-lg-2 col-3"><img
+                                                                    class="img-fluid d-block rounded-circle"
+                                                                    src="https://static.pingendo.com/img-placeholder-2.svg">
+                                                            </div>
+                                                            <div class="col-lg-10 col-9 d-flex align-items-center">
+                                                                <p class="my-2">Abdulkareem Baba Aminu <br>
+                                                                    <i>award-winning culture critic </i></p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end test-->
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <!--Q-->
 <div class="py-5" id="reviews">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="text-right text-dark" style=""><b>Latest Articles</b> <br></h1>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-right text-dark" style=""><b>Latest Articles</b> <br></h1>
+            </div>
+        </div>
     </div>
-  </div>
 </div>
 <div class="py-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 p-3 col-md-6">
-        <div class="card h-100">
-          <div class="card-body p-4">
-            <h2><b>Farafina To Publish 'Of Women And Frogs'</b></h2>
-            <p style="">Farafina is set to publish debut novel, Of Women and Frogs, by Bisi Adjapon, in December 2018.
-              Of Women and Frogs is the coming-of-age story of Esi, a feisty half-Nigerian girl growing up in
-              post-colonial Ghana, with occasional visits to her maternal family in Lagos.</p>
-            <p class="mb-0 lead"><a
-                    href="https://farafinabooks.wordpress.com/2018/08/01/farafina-to-publish-bisi-adjapons-of-women-and-frogs/">Read
-              more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 p-3 col-md-6">
-        <div class="card h-100">
-          <div class="card-body p-4">
-            <h2 class="text-center py-4" style=""><b>Ake Arts &amp; Book Festival</b></h2>
-            <p>Welcome To Ake Arts &amp; Books Festival About Ake Festival Ake Arts &amp; Book Festival is four days of
-              cultural immersion. As is always the case, Ake Arts and Book Festival aims to showcase the very best of
-              contemporary African literature, poetry, music, art, film, and theatre.</p>
-            <p class="mb-0 lead"><a href="http://www.akefestival.org/index.php">Read more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 p-3">
-        <div class="card h-100">
-          <div class="card-body p-4">
-            <h2 contenteditable="true" class="py-4"><b>Musings of a Diasporean</b></h2>
-            <p>A Walk in the Burb For the first time ever, in a suburb where cars whiz around curves and race to beat
-              red lights, I walked to the library and bank. If I'd worn shorts and sneakers, jogging in place at
-              intersections while waiting for the light to change, people would have thought, "Oh, she's
-              exercising."</p>
-            <p class="mb-0 lead"><a href="https://medium.com/@bisiadjapon">Read more</a></p>
-          </div>
-        </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 p-3 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <h2><b>Farafina To Publish 'Of Women And Frogs'</b></h2>
+                        <p style="">Farafina is set to publish debut novel, Of Women and Frogs, by Bisi Adjapon, in
+                            December 2018. Of Women and Frogs is the coming-of-age story of Esi, a feisty half-Nigerian
+                            girl growing up in post-colonial Ghana, with occasional visits to her maternal family in
+                            Lagos.</p>
+                        <p class="mb-0 lead"><a
+                                href="https://farafinabooks.wordpress.com/2018/08/01/farafina-to-publish-bisi-adjapons-of-women-and-frogs/">Read
+                            more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3 col-md-6">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <h2 class="text-center py-4" style=""><b>Ake Arts &amp; Book Festival</b></h2>
+                        <p>Welcome To Ake Arts &amp; Books Festival About Ake Festival Ake Arts &amp; Book Festival is
+                            four days of cultural immersion. As is always the case, Ake Arts and Book Festival aims to
+                            showcase the very best of contemporary African literature, poetry, music, art, film, and
+                            theatre.</p>
+                        <p class="mb-0 lead"><a href="http://www.akefestival.org/index.php">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 p-3">
+                <div class="card h-100">
+                    <div class="card-body p-4">
+                        <h2 contenteditable="true" class="py-4"><b>Musings of a Diasporean</b></h2>
+                        <p>A Walk in the Burb For the first time ever, in a suburb where cars whiz around curves and
+                            race to beat red lights, I walked to the library and bank. If I'd worn shorts and sneakers,
+                            jogging in place at intersections while waiting for the light to change, people would have
+                            thought, "Oh, she's exercising."</p>
+                        <p class="mb-0 lead"><a href="https://medium.com/@bisiadjapon">Read more</a></p>
+                    </div>
+                </div>
         </div>
       </div>
     </div>
@@ -410,21 +504,21 @@
         <div class="text-center mx-auto col-lg-8 col-10">
           <div id="carousel1" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
             <div class="carousel-inner">
-              <div class="carousel-item active"><img class="img-fluid d-block"
-                                                     src="pics/WhatsApp Image 2018-10-12 at 19.20.45.jpeg">
+                <div class="carousel-item active"><img class="img-fluid d-block"
+                                                       src="pics/WhatsApp Image 2018-10-12 at 19.20.45.jpeg">
               </div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.27.07.jpeg"></div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.36.12.jpeg"></div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.27.05.jpeg"></div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.27.07(1).jpeg"></div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.27.07(2).jpeg"></div>
-              <div class="carousel-item"><img class="img-fluid d-block"
-                                              src="pics/WhatsApp Image 2018-10-12 at 19.31.20.jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.27.07.jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.36.12.jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.27.05.jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.27.07(1).jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.27.07(2).jpeg"></div>
+                <div class="carousel-item"><img class="img-fluid d-block"
+                                                src="pics/WhatsApp Image 2018-10-12 at 19.31.20.jpeg"></div>
             </div>
             <ol class="carousel-indicators"></ol>
           </div>
@@ -448,11 +542,11 @@
           <h5><b>Follow Bisi</b></h5>
           <div class="row">
             <div class="col-md-12 d-flex align-items-center justify-content-between my-2"><a href="#">
-              <i class="d-block fa fa-instagram text-muted mx-2 fa-2x"></i>
+                <i class="d-block fa fa-instagram text-muted mx-2 fa-2x"></i>
             </a> <a href="#">
-              <i class="d-block fa fa-medium text-muted mx-2 fa-2x"></i>
+                <i class="d-block fa fa-medium text-muted mx-2 fa-2x"></i>
             </a> <a href="#">
-              <i class="d-block fa fa-twitter text-muted ml-2 fa-2x"></i>
+                <i class="d-block fa fa-twitter text-muted ml-2 fa-2x"></i>
             </a></div>
           </div>
         </div>
@@ -476,8 +570,8 @@
         crossorigin="anonymous"></script>
 <pingendo onclick="window.open('https://pingendo.com/', '_blank')"
           style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">
-  Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block"
-                                          alt="Pingendo logo" height="16"></pingendo>
+    Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block"
+                                            alt="Pingendo logo" height="16"></pingendo>
 </body>
 
 </html>
