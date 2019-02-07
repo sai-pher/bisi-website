@@ -393,7 +393,8 @@ mark,
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  /*height: auto; */
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -4741,6 +4742,12 @@ button.bg-dark:focus {
 
 .align-self-stretch {
   align-self: stretch !important; }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media (min-width: 576px) {
   .flex-sm-row {
